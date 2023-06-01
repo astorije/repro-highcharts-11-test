@@ -1,0 +1,8 @@
+{
+  "name": "repro-highcharts-11-test",
+  "version": "0.0.0",
+  "repository": "https://github.com/astorije/repro-highcharts-11-test.git",
+  "author": "Jérémie Astori <jeremie@astori.fr>",
+  "license": "UNLICENSED",
+  "private": true
+}
