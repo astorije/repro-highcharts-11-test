@@ -1,8 +1,11 @@
 import { render, screen } from "@testing-library/react";
 import { App } from "./App";
 
-test("renders a chart", () => {
+test("renders", async () => {
   render(<App />);
-  const chart = screen.getByText(/my chart/i);
-  expect(chart).toBeInTheDocument();
+
+  // This same test fails in Highcharts v11
+  expect(
+    await screen.findByRole("img", { name: "x, 1, 2." })
+  ).toBeInTheDocument();
 });

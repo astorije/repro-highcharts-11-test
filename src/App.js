@@ -1,10 +1,12 @@
 import Highcharts from "highcharts";
 import HighchartsReact from "highcharts-react-official";
+import highchartsAccessibility from "highcharts/modules/accessibility";
+
+highchartsAccessibility(Highcharts);
 
 const options = {
-  accessibility: { enabled: false },
   chart: {
-    type: "spline",
+    type: "column",
   },
   title: {
     text: "My chart",
